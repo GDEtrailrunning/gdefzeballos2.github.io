@@ -152,37 +152,12 @@ h2 {
   font-style: normal;
 }
 
-
-
-video {
-  width: 100%;
-  height: auto;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  video {
-    width: auto;
-    height: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  video {
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-  }
-
   .main-container,
   .sub-container,
   .column {
     margin: 0; /* Elimina márgenes laterales en dispositivos pequeños */
   }
-}
+
 
 .sub-container h4 {
   background-color: #da9329;
@@ -217,7 +192,7 @@ video {
 }
 
 .image-container video {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   display: grid; /* Asegura que el video se centre correctamente */
   grid-template-columns: 
